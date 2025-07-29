@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+float f;
+Scanner sc=new Scanner(System.in);
+f=sc.nextFloat();
+System.out.printf("%3f\n",f);
+System.out.printf("%.4f\n",f);
+System.out.println(f);
+System.out.println(Math.round(f));
+    }
+}
