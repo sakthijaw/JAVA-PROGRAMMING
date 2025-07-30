@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int c=sc.nextInt();
+        char ch=sc.next().charAt(0);
+        switch(ch){
+            case '+':System.out.println("Addition of two number is "+(float)(n+c));break;
+            case '-':System.out.println("Subtraction of two number is "+(float)(n-c));break;
+            case '*':System.out.println("Multiplication of two number is "+(float)(n*c));break;
+            case '/':System.out.println("Division of two number is "+(float)(n/c));break;
+            case '%':System.out.println("Modulo of two number is "+(float)(n%c));break;
+           
+            default:
+                System.out.println("Invalid Input");
+                
+        }
+    }
+}
