@@ -1,0 +1,64 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+    
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int evenCount = (n + 1) / 2;
+        int oddCount = n / 2;
+
+        int[] evenArr = new int[evenCount];
+        int[] oddArr = new int[oddCount];
+
+        int ei = 0, oi = 0;
+
+       
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 0) {
+                evenArr[ei++] = arr[i];
+            } else {
+                oddArr[oi++] = arr[i];
+            }
+        }
+
+        for (int i = 0; i < evenCount - 1; i++) {
+            for (int j = i + 1; j < evenCount; j++) {
+                if (evenArr[i] > evenArr[j]) {
+                    int temp = evenArr[i];
+                    evenArr[i] = evenArr[j];
+                    evenArr[j] = temp;
+                }
+            }
+        }
+
+        for (int i = 0; i < oddCount - 1; i++) {
+            for (int j = i + 1; j < oddCount; j++) {
+                if (oddArr[i] > oddArr[j]) {
+                    int temp = oddArr[i];
+                    oddArr[i] = oddArr[j];
+                    oddArr[j] = temp;
+                }
+            }
+        }
+
+        int secondLargestEven = evenArr[evenCount - 2]; 
+        int secondSmallestOdd = oddArr[1];
+        int sum = secondLargestEven + secondSmallestOdd;
+
+        System.out.println("Sum=" + sum);
+    }
+}
