@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] arg) {
+	    Scanner c=new Scanner(System.in);
+	    
+	    
+	    System.out.println("Enter two numbers: ");
+	    float a=c.nextFloat();
+	    float b=c.nextFloat();
+	    System.out.println("choose operator(+,-,*,/): ");
+	    char ch=c.next().charAt(0);
+	    switch(ch){
+	        case '+':
+	            float l=a+b;
+	            System.out.println(a+"+"+b+"="+l);
+	            break;
+	            case '-':
+	            float k=a-b;
+	            System.out.println(a+"-"+b+"="+k);
+	            break;
+	            case '*':
+	            float j=a*b;
+	            System.out.println(a+"*"+b+"="+j);
+	            break;
+	            case '/':
+	            float h=a/b;
+	            System.out.println(a+"/"+b+"="+h);
+	            break;
+	            default:
+	            System.out.println("Invalid operator");
+	            
+	            
+
+	          
+	        
+	    }
+
+	    
+	
+	}
+}
