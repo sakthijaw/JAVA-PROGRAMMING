@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] arg) {
+	    Scanner c=new Scanner(System.in);
+	    
+	    
+	    float r=c.nextFloat();
+	    double v;
+	    v=(4.0/3.0)*Math.PI*r*r*r;
+	    System.out.println(v);
+	    
+	    
+	
+	}
+}
