@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main
+{
+    String model;
+    int price;
+    double dis;
+    Main(int price,String model){
+        this.model=model;
+        this.price=price;
+        
+    }
+    void display(){
+        System.out.println(model+" "+price);
+        
+    }
+    void red(){
+        dis=(double)price*0.25;
+        System.out.println(dis);
+        int s=(int)price-(int)dis;
+        System.out.println(s);
+        
+    }
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int a=sc.nextInt();
+	    sc.nextLine();
+	    String b=sc.nextLine();
+	    Main obj=new Main(a,b);
+	    obj.display();
+	    obj.red();
+	}
+}
