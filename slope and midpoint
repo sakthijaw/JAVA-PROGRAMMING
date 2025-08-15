@@ -1,0 +1,21 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter x and y coordinates of Endpoint-1:");
+	    double n=sc.nextDouble();
+	    double m=sc.nextDouble();
+	    System.out.println("Enter x and y coordinates of Endpoint-2:");
+	    double n1=sc.nextDouble();
+	    double m1=sc.nextDouble();
+	    double slope=(m1-m)/(n1-n);
+	    double mid_x=(n1+n)/2;
+	    double mid_y=(m1+m)/2;
+	    System.out.println("slope "+slope);
+	    System.out.println("midpoint "+mid_x+","+mid_y);
+	    
+	    
+	}
+}
