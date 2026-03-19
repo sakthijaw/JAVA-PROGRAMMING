@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="AABBCCD";
+	    StringBuilder r=new StringBuilder(a);
+	    r.reverse();
+	    System.out.print(r);
+	   
+	}
+}
