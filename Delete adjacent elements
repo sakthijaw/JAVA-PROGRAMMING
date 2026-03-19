@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="AABBCCD";
+	    StringBuilder r=new StringBuilder();
+	    r.append(a.charAt(0));
+	    for(int i=1;i<a.length();i++){
+	        if(a.charAt(i)!=a.charAt(i-1)){
+	            r.append(a.charAt(i));
+	        }
+	    }
+	    System.out.print(r);
+	   
+	   
+	}
+}
