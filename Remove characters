@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Practice Java Programming";
+	    String m="abc";
+	    String result="";
+	    for(int i=0;i<a.length();i++){
+	        boolean found=false;
+	        for(int j=0;j<m.length();j++){
+	        if(a.charAt(i)==m.charAt(j)){
+	            found=true;
+	        }
+	        
+	    }
+	    if(!found){
+	            result+=a.charAt(i);
+	        }
+	    
+	    }
+	    System.out.print(result);
+	}
+}
